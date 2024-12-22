@@ -1,8 +1,147 @@
-<div class="col-lg-7">
-    <form action="" class="">
-        <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Họ & Tên">
-        <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Gmail">
-        <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Nội Dung"></textarea>
-        <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary " type="submit">Gởi</button>
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Liên HệHệ - Trà Vinh Tourism</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trà Vinh Tourism</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Trang Chủ</span></a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link"><span>Trở Về</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+         <!-- Contact Start -->
+        <div class="container-fluid contact py-5">
+            <div class="container py-5">
+                <div class="p-5 bg-light rounded">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="text-center mx-auto" style="max-width: 700px;">
+                                <h1 class="text-bg-dark">Liên Hệ Đến Chúng Tôi</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="h-100 rounded">
+                                <iframe class="rounded w-100" 
+                                style="height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.2585498187027!2d106.34394437471187!3d9.923451590178042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0175ea296facb%3A0x55ded92e29068221!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBUcsOgIFZpbmg!5e1!3m2!1svi!2s!4v1733246963726!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <form action="javascript:void(0);" id="myForm">
+                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Họ & Tên">
+                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Email">
+                                <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Nội Dung"></textarea>
+                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary" type="submit">Gửi đi</button>
+                            </form>
+                        </div>
+                        
+                        <script>
+                            document.getElementById('myForm').addEventListener('submit', function(event) {
+                                Swal.fire({
+                                    title: 'Thông Báo!',
+                                    text: 'Gửi đi thành công',
+                                    icon: 'success',
+                                    confirmButtonText: 'OK'
+                                });
+                            });
+                        </script>
+                        
+                        
+                        <div class="col-lg-5">
+                            <div class="d-flex p-4 rounded mb-4 bg-white">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Địa Chỉ</h4>
+                                    <p class="mb-2">126 Nguyễn Thiện Thành, Phường 5, Trà Vinh, Việt Nam</p>
+                                </div>
+                            </div>
+                            <div class="d-flex p-4 rounded mb-4 bg-white">
+                                <i class="fas fa-envelope fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>mail</h4>
+                                    <p class="mb-2">tonvo1103@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex p-4 rounded bg-white">
+                                <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
+                                <div>
+                                    <h4>Trà Vinh Tourism</h4>
+                                    <p class="mb-2">0345678910</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+          <!-- Footer -->
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Trà Vinh <span>Tourism</span></h2>
+                        <p>Copyright © www.travinhtourism.vn</p>
+                    </div>
+                </div>
+                
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Bạn có thắc mắc?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Số 126 Nguyễn Thiện Thành, Khóm 4, Phường 5, TP Trà Vinh</span></li>
+                                <li><span class="icon icon-phone"></span><span class="text">+84 0355671458</span></li>
+                                <li><span class="icon icon-envelope"></span><span class="text">tonvo1103@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
