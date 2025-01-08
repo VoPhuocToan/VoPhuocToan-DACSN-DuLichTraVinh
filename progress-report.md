@@ -28,7 +28,51 @@
 - Khởi tạo thành công dự án.
 - Có được giao diện website khởi đầu.
 
+
 ---
+
+# Báo cáo tiến độ - Tuần 3
+
+## Thời gian: Từ 02/12/2024 đến 08/12/2024
+
+## Nội dung công việc
+- Phát triển front-end với Bootstrap.
+
+## Kết quả dự kiến
+- Hoàn thiện cấu trúc vào giao diện website.
+
+---
+
+# Báo cáo tiến độ - Tuần 4
+
+## Thời gian: Từ 16/12/2024 đến 22/12/2024
+
+## Nội dung công việc
+- Phát triển các tính năng (văn bản, hình ảnh).
+- Kiểm thử và sửa lỗi hệ thống.
+- Hoàn thiện các chức năng.
+
+## Kết quả dự kiến
+- Hoàn thiện website và các chức năng chính.
+
+---
+
+# Kết thúc dự án
+
+## Thời gian: Từ 23/12/2024 đến 29/12/2024
+
+## Nội dung công việc
+- Viết báo cáo.
+- Xem lại, chỉnh sửa và in báo cáo.
+- Nộp báo cáo.
+
+## Kết quả dự kiến
+- Hoàn chỉnh quyển báo cáo.
+
+
+
+
+
 
 
 
