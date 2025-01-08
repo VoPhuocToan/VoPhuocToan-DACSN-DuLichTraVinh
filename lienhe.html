@@ -58,23 +58,89 @@
                         </div>
                         <div class="col-lg-7">
                             <form action="javascript:void(0);" id="myForm">
-                                <input type="text" class="w-100 form-control border-0 py-3 mb-4" placeholder="Họ & Tên">
-                                <input type="email" class="w-100 form-control border-0 py-3 mb-4" placeholder="Email">
-                                <textarea class="w-100 form-control border-0 mb-4" rows="5" cols="10" placeholder="Nội Dung"></textarea>
-                                <button class="w-100 btn form-control border-secondary py-3 bg-white text-primary" type="submit">Gửi đi</button>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    class="w-100 form-control border-0 py-3 mb-4" 
+                                    placeholder="Họ & Tên"
+                                >
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    class="w-100 form-control border-0 py-3 mb-4" 
+                                    placeholder="Email"
+                                >
+                                <textarea 
+                                    id="message" 
+                                    class="w-100 form-control border-0 mb-4" 
+                                    rows="5" 
+                                    cols="10" 
+                                    placeholder="Nội Dung"
+                                ></textarea>
+                                <button 
+                                    class="w-100 btn form-control border-secondary py-3 bg-white text-primary" 
+                                    type="submit"
+                                >
+                                    Gửi đi
+                                </button>
                             </form>
                         </div>
                         
                         <script>
                             document.getElementById('myForm').addEventListener('submit', function(event) {
+                                event.preventDefault(); // Ngăn chặn gửi form mặc định
+                        
+                                const name = document.getElementById('name').value.trim();
+                                const email = document.getElementById('email').value.trim();
+                                const message = document.getElementById('message').value.trim();
+                        
+                                // Kiểm tra Họ & Tên
+                                if (!name || name.length < 3) {
+                                    Swal.fire({
+                                        title: 'Lỗi!',
+                                        text: 'Vui lòng nhập Họ & Tên hợp lệ (ít nhất 3 ký tự).',
+                                        icon: 'error',
+                                        confirmButtonText: 'OK'
+                                    });
+                                    return;
+                                }
+                        
+                                // Kiểm tra Email
+                                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                                if (!emailRegex.test(email)) {
+                                    Swal.fire({
+                                        title: 'Lỗi!',
+                                        text: 'Vui lòng nhập Email hợp lệ.',
+                                        icon: 'error',
+                                        confirmButtonText: 'OK'
+                                    });
+                                    return;
+                                }
+                        
+                                // Kiểm tra Nội Dung
+                                if (!message) {
+                                    Swal.fire({
+                                        title: 'Lỗi!',
+                                        text: 'Vui lòng nhập Nội Dung.',
+                                        icon: 'error',
+                                        confirmButtonText: 'OK'
+                                    });
+                                    return;
+                                }
+                        
+                                // Hiển thị thông báo thành công nếu các trường hợp lệ
                                 Swal.fire({
                                     title: 'Thông Báo!',
                                     text: 'Gửi đi thành công',
                                     icon: 'success',
                                     confirmButtonText: 'OK'
                                 });
+                        
+                                // Reset form
+                                document.getElementById('myForm').reset();
                             });
                         </script>
+                        
                         
                         
                         <div class="col-lg-5">
